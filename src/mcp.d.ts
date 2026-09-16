@@ -37,7 +37,6 @@ export interface OptimizeCriticalCssArgs {
 /**
  * Start a Model Context Protocol server exposing the `optimize_critical_css` tool.
  *
- * @returns The MCP server instance. Connect it to a transport (e.g. `StdioServerTransport`)
- *          to serve.
+ * @returns The MCP server instance. Connect it to a transport (e.g. `StdioServerTransport`) to serve.
  */
 export function createServer(): Promise<Server>;
