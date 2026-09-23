@@ -131,7 +131,7 @@ export interface ReportBytes {
  */
 export interface CriticalReport {
   /** The engine that actually ran: `"static"`, `"render"`, or `"none"` when no CSS was found. */
-  engine: CriticalEngine | "none";
+  engine: "static" | "render" | "none";
   /** Human-readable explanation of the engine choice. */
   reason: string;
   /** The engine requested by the caller (`"auto"` when the engine was auto-routed). */
